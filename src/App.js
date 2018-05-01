@@ -3,6 +3,7 @@ import axios from 'axios';
 
 import Counter from './components/Counter';
 
+// In order to import these functions in the tests later on , they need to be exported from the file.
 export const doIncrement = (prevState) => ({
     counter: prevState.counter + 1,
 });
