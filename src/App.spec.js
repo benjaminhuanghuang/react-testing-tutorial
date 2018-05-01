@@ -77,13 +77,13 @@ describe('App Component', () => {
         expect(App.prototype.componentDidMount.calledOnce).to.equal(true);
     });
 
-    // it('fetches async counters', () => {
-    //     const wrapper = shallow(<App />);
+    it('fetches async counters', () => {
+        const wrapper = shallow(<App />);
 
-    //     expect(wrapper.state().asyncCounters).to.equal(null);
+        expect(wrapper.state().asyncCounters).to.equal(null);
 
-    //     promise.then(() => {
-    //         expect(wrapper.state().asyncCounters).to.equal(result);
-    //     });
-    // });
+        promise.then(() => {
+            expect(wrapper.state().asyncCounters).to.equal(result);
+        });
+    });
 });
