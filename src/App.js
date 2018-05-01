@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 
+import Counter from './components/Counter';
+
 export const doIncrement = (prevState) => ({
     counter: prevState.counter + 1,
 });
@@ -55,8 +57,4 @@ class App extends Component {
         );
     }
 }
-
-export const Counter = ({ counter }) =>
-    <p>{counter}</p>
-
 export default App;
