@@ -32,7 +32,8 @@ describe('App Component', () => {
     });
 
     after(() => {
-
+        // restore the native behavior of the get() method which was stubbed before
+        axios.get.restore();
     });
 
     it('renders the Counter wrapper', () => {
